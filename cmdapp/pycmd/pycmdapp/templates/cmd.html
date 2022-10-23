@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+<body class="bg-zinc-900 relative  min-h-full">
+    <main>
+        <div class="absolute inset-1/4 bg-zinc-800 w-1/2 h-1/2 rounded">
+        <div class="w-full h-6 flex pt-2 pl-2">
+            <div class="h-2.5 w-2.5 rounded-full bg-red-500 ">
+
+            </div>
+
+            <div class="h-2.5 w-2.5 rounded-full bg-amber-400 ml-1">
+                
+            </div>
+
+            <div class="h-2.5 w-2.5 rounded-full bg-green-500 ml-1">
+                
+            </div>
+        </div>
+            <div class="flex flex-col justify-between h-full">
+                <form action="" method="post">
+                    {% csrf_token %}
+                   <div class="flex text-neutral-300">
+                    <div> >>> </div>
+                    <input type="text" name="input" id="input" class=" w-full bg-zinc-800 outline-0 pl-2 active:bg-zinc-800 foucs:bg-zinc-800 " placeholder="your code here">
+                   </div>
+                    
+            
+            
+            
+            
+                    
+                    
+                </form>
+                <div class="h-1/2 flex flex-col overflow-auto mb-6 text-neutral-300">
+                    
+                    {% for inputlsts in inputlst %}
+                    <div class="">~/Desktop/pythoncmd </div>
+                    <div class="">{{ inputlsts }}</div>
+    
+                    {% endfor %}
+                </div>
+               
+            </div>
+        </div>
+
+
+
+    </main>
+   
+</body>
+</html>
