@@ -42,7 +42,13 @@
                     
                     {% for inputlsts in inputlst %}
                     <div class="">~/Desktop/pythoncmd </div>
-                    <div class="">{{ inputlsts }}</div>
+                    <div class="pl-1">{{ inputlsts }}</div>
+    
+                    {% endfor %}
+
+                    {% for msg in errorlst %}
+                    <div class="">~/Desktop/pythoncmd </div>
+                    <div class="text-red-800 pl-1 text-bold"> {{ msg }}</div>
     
                     {% endfor %}
                 </div>
